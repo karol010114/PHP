@@ -1,8 +1,6 @@
 <?php
 
-
-
-echo "Por favor, ingresa un número o una letra para indicar el color del semáforo: ";
+echo "Por favor, ingresa un número del 1 al 3 para indicar el color del semáforo: ";
 $color =fgets(STDIN);
 
 
