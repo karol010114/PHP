@@ -25,7 +25,7 @@ $sintomas_covid=[
     //caso 3
      $saldo = 1000;
      if(!($saldo > 0)){
-        echo "Tiene saldo suficiente";
+        echo "\nTienes saldo insuficiente";
          
      }
 

@@ -4,7 +4,7 @@ try {
     $nombre = $_POST["nombre"];
     $dsn = "mysql:host=localhost;dbname=covid";
     $user = "root";
-    $pass = "";
+    $pass = "root";
     $db = new PDO($dsn, $user, $pass);
     $pacientes = $db->query("SELECT * FROM pacientes 
     where nombres like '%$nombre%'");

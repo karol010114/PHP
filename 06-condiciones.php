@@ -16,13 +16,18 @@ else{
  echo "\n";
  echo "Ingrese su Nota Final: ";
  $notafinal = fgets(STDIN);
- if($notafinal <=10.5) {
-   echo "Usted esta aprobado a las justas";
- }
-  elseif(10.5 < $notafinal && $notafinal <=15) {
-    echo "Usted esta aprobado de forma regular";
-  }
-  else {
-    echo "Usted muy bien aprobado";
-  }
-?>     
+
+ if($notafinal < 10.5) {
+  echo "Usted está desaprobado\n";
+}
+elseif($notafinal == 10.5) {
+  echo "Usted está aprobado a las justas\n";
+}
+elseif($notafinal > 10.5 && $notafinal <= 15) {
+  echo "Usted está aprobado de forma regular\n";
+}
+else {
+  echo "Usted está aprobado\n";
+}
+
+?>
